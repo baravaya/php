@@ -1,7 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nina
- * Date: 8/12/2015
- * Time: 2:51 PM
- */
+
+class Article {
+    public $title;
+    public $text;
+    public function view()
+    {
+        echo $this->title;
+    }
+}
+
+$a = new Article;
+$a->title = 'TITLE news';
+$a->view();
+
+$b = new Article;
+$b->title = 'Another one';
+$b->view();
+?>
