@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nina
- * Date: 8/12/2015
- * Time: 3:41 PM
- */
+require('tutor_0.php');
+$homepage = new Page();
+$homepage->content = '<p>Hello, This is company TLA</p>';
+$homepage->Display();
